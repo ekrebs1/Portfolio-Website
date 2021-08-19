@@ -79,28 +79,6 @@ export const SectionText = styled.p`
   }
 `;
 
-export const SectionDivider = styled.div`
-  width: 64px;
-  height: 6px;
-  border-radius: 10px;
-  background-color: #fff;
-  background: ${(props) =>
-    props.colorAlt
-      ? "linear-gradient(270deg, #F46737 0%, #945DD6 100%)"
-      : "linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)"};
-
-  margin: ${(props) => (props.divider ? "4rem 0" : "")};
-
-  @media ${(props) => props.theme.breakpoints.md} {
-    width: 48px;
-    height: 4px;
-  }
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    width: 32px;
-    height: 2px;
-  }
-`;
 export const SectionSubText = styled.p`
   max-width: 800px;
   font-weight: 300;
@@ -170,87 +148,41 @@ export const SecondaryBtn = styled.button`
   }
 `;
 
-export const ButtonBack = styled.div`
-  width: ${({ alt }) => (alt ? "150px" : "262px")};
-  height: ${({ alt }) => (alt ? "52px" : "64px")};
-  border-radius: 50px;
-  font-size: ${({ alt }) => (alt ? "20px" : "24px")};
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: ${({ alt, form }) => (alt || form ? "0" : "0 0 80px")};
-  color: #fff;
-  background: ${({ alt }) =>
-    alt
-      ? "linear-gradient(270deg, #ff622e 0%, #B133FF 100%)"
-      : "linear-gradient(270deg, #00DBD8 0%, #B133FF 100%)"};
-  cursor: pointer;
-  transition: 0.5s ease;
-  position: relative;
-  overflow: hidden;
-  opacity: ${({ disabled }) => (disabled ? ".5" : "1")};
-
-  @media ${(props) => props.theme.breakpoints.md} {
-    width: ${({ alt }) => (alt ? "150px" : "184px")};
-    height: ${({ alt }) => (alt ? "52px" : "48px")};
-    font-size: ${({ alt }) => (alt ? "20px" : "16px")};
-    margin-bottom: ${({ alt }) => (alt ? "0" : "64px")};
+export const Button = styled.div`
+  .square_btn {
+    display: inline-block;
+    position: relative;
+    padding: 1em 1em;
+    margin: 2rem 0 2rem 0;
+    text-decoration: none;
+    color: #000;
+    transition: 0.4s;
   }
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    width: 100%;
-    height: 32px;
-    font-size: 14px;
-    margin-bottom: ${({ alt }) => (alt ? "0" : "32px")};
+  .square_btn:hover {
+    color: #ff7f7f;
   }
-`;
-
-export const ButtonFront = styled.button`
-  border: none;
-  border-radius: 50px;
-  color: #fff;
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: ${({ alt }) =>
-    alt
-      ? "linear-gradient(270deg, #F46737 0%, #945DD6 100%)"
-      : "linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)"};
-  opacity: ${({ disabled }) => (disabled ? ".5" : "1")};
-  transition: 0.4s ease;
-  font-size: ${({ alt }) => (alt ? "20px" : "24px")};
-  font-weight: 600;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: ${({ disabled }) =>
-    disabled
-      ? "inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3)"
-      : "none"};
-
-  &:hover {
-    opacity: 0;
+  .square_btn:before,
+  .square_btn:after {
+    position: absolute;
+    top: 0;
+    content: "";
+    width: 15px;
+    height: 100%;
+    display: inline-block;
   }
-  &:focus {
-    outline: none;
+  .square_btn:before {
+    border-left: solid 1px #ff7f7f;
+    border-top: solid 1px #ff7f7f;
+    border-bottom: solid 1px #ff7f7f;
+    left: 0;
   }
-  &:active {
-    opacity: 1;
-    box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15),
-      inset 0px 0px 4px rgba(20, 20, 55, 0.3);
+  .square_btn:after {
+    content: "";
+    border-top: solid 1px #ff7f7f;
+    border-right: solid 1px #ff7f7f;
+    border-bottom: solid 1px #ff7f7f;
+    right: 0;
   }
-
-  &:disabled {
-    background: linear-gradient(270deg, #00dbd8 0%, #b133ff 100%);
-    opacity: 0.5;
-    box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15),
-      inset 0px 0px 4px rgba(20, 20, 55, 0.3);
-  }
-
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: ${({ alt }) => (alt ? "20px" : "16px")};
   }

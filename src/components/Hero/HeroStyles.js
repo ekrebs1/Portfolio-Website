@@ -115,24 +115,10 @@ export const Div3 = styled.div`
     color: #ffffff;
   }
 
-  .wrapper .instagram:hover,
-  .wrapper .instagram:hover .tooltip,
-  .wrapper .instagram:hover .tooltip::before {
-    background-color: #e1306c;
-    color: #ffffff;
-  }
-
   .wrapper .github:hover,
   .wrapper .github:hover .tooltip,
   .wrapper .github:hover .tooltip::before {
     background-color: #333333;
-    color: #ffffff;
-  }
-
-  .wrapper .youtube:hover,
-  .wrapper .youtube:hover .tooltip,
-  .wrapper .youtube:hover .tooltip::before {
-    background-color: #de463b;
     color: #ffffff;
   }
 `;

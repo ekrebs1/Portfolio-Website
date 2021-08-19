@@ -5,8 +5,9 @@ import {
   Section,
   SectionText,
   SectionTitle,
+  Button,
 } from "../../styles/GlobalComponents";
-import Button from "../../styles/GlobalComponents/Button";
+
 import { LeftSection, Div3, SocialIcons } from "./HeroStyles";
 
 const Hero = (props) => (
@@ -53,7 +54,11 @@ const Hero = (props) => (
           </div>
         </div>
       </Div3>
-      <Button>Learn More</Button>
+      <Button>
+        <a href='#projects' class='square_btn'>
+          See More
+        </a>
+      </Button>
     </LeftSection>
   </Section>
 );
