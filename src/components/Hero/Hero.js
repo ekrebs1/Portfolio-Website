@@ -1,13 +1,61 @@
-import React from 'react';
+import React from "react";
+import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
+import {
+  Section,
+  SectionText,
+  SectionTitle,
+} from "../../styles/GlobalComponents";
+import Button from "../../styles/GlobalComponents/Button";
+import { LeftSection, Div3, SocialIcons } from "./HeroStyles";
 
 const Hero = (props) => (
-  <div>
-    Hero
-  </div>
+  <Section row nopadding>
+    <LeftSection>
+      <SectionTitle main center>
+        Hi There, I'm Erica!
+      </SectionTitle>
+      <SectionText>
+        <b>Software Developer.</b> <br />
+        Bringing innovation through creativity and collaboration.
+      </SectionText>
+      <Div3>
+        <div class='wrapper'>
+          <div class='icon facebook'>
+            <div class='tooltip'>Linkedin</div>
+            <span>
+              <i class='fab fa-facebook-f'>
+                <SocialIcons href='https://www.linkedin.com/in/ekrebs1/'>
+                  <FaLinkedin size='3rem' />
+                </SocialIcons>
+              </i>
+            </span>
+          </div>
+          <div class='icon twitter'>
+            <div class='tooltip'>Twitter</div>
+            <span>
+              <i class='fab fa-twitter'>
+                <SocialIcons href='https://twitter.com/EricaKrebs1'>
+                  <FaTwitter size='3rem' />
+                </SocialIcons>
+              </i>
+            </span>
+          </div>
+          <div class='icon github'>
+            <div class='tooltip'>Github</div>
+            <span>
+              <i class='fab fa-github'>
+                <SocialIcons href='https://github.com/ekrebs1'>
+                  <FaGithub size='3rem' />
+                </SocialIcons>
+              </i>
+            </span>
+          </div>
+        </div>
+      </Div3>
+      <Button>Learn More</Button>
+    </LeftSection>
+  </Section>
 );
 
 export default Hero;
