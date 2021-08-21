@@ -1,4 +1,5 @@
 import React from "react";
+
 import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 import {
@@ -8,7 +9,7 @@ import {
   Button,
 } from "../../styles/GlobalComponents";
 
-import { LeftSection, Div3, SocialIcons } from "./HeroStyles";
+import { LeftSection, RightSection, Div3, SocialIcons } from "./HeroStyles";
 
 const Hero = (props) => (
   <Section row nopadding>
@@ -55,11 +56,14 @@ const Hero = (props) => (
         </div>
       </Div3>
       <Button>
-        <a href='#projects' class='square_btn'>
-          See More
+        <a
+          href='https://drive.google.com/file/d/1-yxKeRy2Jcw2QEtipbngqKBuElXOpAHt/view?usp=sharing'
+          class='square_btn'>
+          Resume
         </a>
       </Button>
     </LeftSection>
+    <RightSection></RightSection>
   </Section>
 );
 

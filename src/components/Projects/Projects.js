@@ -1,17 +1,18 @@
 import React from "react";
-
+import { FaReact } from "react-icons/fa";
+import { SiJavascript, SiPostgresql, SiNodeDotJs } from "react-icons/si";
 import {
   BlogCard,
   CardInfo,
   ExternalLinks,
   GridContainer,
   HeaderThree,
-  Tag,
   TagList,
   TitleContent,
   UtilityList,
   Img,
 } from "./ProjectsStyles";
+
 import { Section, SectionTitle } from "../../styles/GlobalComponents";
 import { projects } from "../../constants/constants";
 
@@ -30,9 +31,13 @@ const Projects = () => (
             <div>
               <TitleContent>Tech Stack</TitleContent>
               <TagList>
-                {tags.map((tag, i) => (
+                <FaReact size='3.8rem' />
+                <SiJavascript size='3rem' />
+                <SiNodeDotJs size='3.3rem' />
+                <SiPostgresql size='3.3rem' />
+                {/* {tags.map((tag, i) => (
                   <Tag key={i}>{tag}</Tag>
-                ))}
+                ))} */}
               </TagList>
             </div>
             <UtilityList>

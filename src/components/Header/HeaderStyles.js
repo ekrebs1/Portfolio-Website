@@ -124,3 +124,10 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
     width: 15px;
   }
 `;
+
+export const Img = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+`;
