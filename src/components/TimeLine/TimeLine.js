@@ -20,8 +20,8 @@ const Timeline = () => {
           have the mindfulness to determine when to be a leader, but also the
           ability to recognize when to play an equal role on the team. Eager to
           build on my academic foundations, I consider myself a 'forever
-          student'. I'm currently seeking employment as a developer and always
-          interested in a challenge! Feel free to connect with me!
+          student'. Currently, I'm seeking employment as a developer and I'm
+          always interested in a challenge! Feel free to connect with me!
         </SectionSubText>
       </Section>
     </>

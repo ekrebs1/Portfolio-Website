@@ -37,28 +37,6 @@ export const RightSection = styled.div`
 `;
 
 export const Div3 = styled.div`
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  *:focus,
-  *:active {
-    outline: none !important;
-    -webkit-tap-highlight-color: transparent;
-  }
-
-  html,
-  body {
-    display: grid;
-    height: 100%;
-    width: 100%;
-    font-family: "Poppins", sans-serif;
-    place-items: center;
-    background: linear-gradient(315deg, #ffffff, #d7e1ec);
-  }
-
   .wrapper {
     display: inline-flex;
   }
@@ -165,8 +143,9 @@ export const Img = styled.img`
 export const Button = styled.a`
   color: #76aace;
   text-decoration: none;
+  margin-left: 50px;
   font-size: 1.6rem;
-  padding: 1rem 6rem;
+  padding: 1rem 5rem;
 
   border: solid 2px #76aace;
   border-radius: 15px;

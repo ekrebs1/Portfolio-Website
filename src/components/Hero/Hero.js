@@ -60,12 +60,11 @@ const Hero = (props) => (
               </span>
             </div>
           </div>
+          <Button href='https://drive.google.com/file/d/1-yxKeRy2Jcw2QEtipbngqKBuElXOpAHt/view?usp=sharing'>
+            Resume
+          </Button>
         </Div3>
-        {/* <Button href='https://drive.google.com/file/d/1-yxKeRy2Jcw2QEtipbngqKBuElXOpAHt/view?usp=sharing'>
-          Resume
-        </Button> */}
       </LeftSection>
-      <RightSection></RightSection>
     </Section>
   </>
 );
