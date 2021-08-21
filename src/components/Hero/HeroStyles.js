@@ -161,3 +161,18 @@ export const Img = styled.img`
   object-fit: cover;
   overflow: hidden;
 `;
+
+export const Button = styled.a`
+  color: #76aace;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 1rem 6rem;
+
+  border: solid 2px #76aace;
+  border-radius: 15px;
+  transition: 0.5s;
+  &:hover {
+    color: #fff;
+    background: #76aace;
+  }
+`;

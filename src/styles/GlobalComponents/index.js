@@ -30,14 +30,7 @@ export const SectionTitle = styled.h2`
   line-height: ${(props) => (props.main ? "72px" : "56px")};
   width: max-content;
   max-width: 100%;
-  background: linear-gradient(
-    121.57deg,
-    #ffffff 18.77%,
-    rgba(255, 255, 255, 0.66) 60.15%
-  );
-  -webkit-background-clip: text;
   margin-bottom: 16px;
-  padding: ${(props) => (props.main ? "58px 0 16px" : "0")};
 
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: ${(props) => (props.main ? "56px" : "48px")};
@@ -77,6 +70,24 @@ export const SectionText = styled.p`
     line-height: 24px;
     padding-bottom: 16px;
   }
+`;
+
+export const SectionDivider = styled.hr`
+  height: 10px;
+
+  background-image: linear-gradient(
+    90deg,
+    #fc94af,
+    #fc94af 33.33%,
+    transparent 33.33%,
+    transparent 100%
+  );
+  border: none;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-size: 3px 100%;
+  width: 95%;
 `;
 
 export const SectionSubText = styled.p`
@@ -145,50 +156,6 @@ export const SecondaryBtn = styled.button`
     width: 100%;
     font-size: 14px;
     line-height: 16px;
-  }
-`;
-
-export const Button = styled.div`
-  .square_btn {
-    display: inline-block;
-    position: relative;
-    padding: 1em 1em;
-    margin: 2rem 0 2rem 0;
-    text-decoration: none;
-    color: #000;
-    transition: 0.4s;
-  }
-  .square_btn:hover {
-    color: #ff7f7f;
-  }
-  .square_btn:before,
-  .square_btn:after {
-    position: absolute;
-    top: 0;
-    content: "";
-    width: 15px;
-    height: 100%;
-    display: inline-block;
-  }
-  .square_btn:before {
-    border-left: solid 1px #ff7f7f;
-    border-top: solid 1px #ff7f7f;
-    border-bottom: solid 1px #ff7f7f;
-    left: 0;
-  }
-  .square_btn:after {
-    content: "";
-    border-top: solid 1px #ff7f7f;
-    border-right: solid 1px #ff7f7f;
-    border-bottom: solid 1px #ff7f7f;
-    right: 0;
-  }
-  @media ${(props) => props.theme.breakpoints.md} {
-    font-size: ${({ alt }) => (alt ? "20px" : "16px")};
-  }
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 14px;
   }
 `;
 

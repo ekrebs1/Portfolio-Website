@@ -99,3 +99,21 @@ export const Tag = styled.li`
   color: #36454f;
   font-size: 1.5rem;
 `;
+
+export const SectionDivider = styled.hr`
+  height: 10px;
+
+  background-image: linear-gradient(
+    90deg,
+    #fc94af,
+    #fc94af 33.33%,
+    transparent 33.33%,
+    transparent 100%
+  );
+  border: none;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  background-size: 3px 100%;
+  width: 95%;
+`;
