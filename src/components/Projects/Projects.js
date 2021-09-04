@@ -12,6 +12,7 @@ import {
   UtilityList,
   Img,
   SectionDivider,
+  ProjectSection,
 } from "./ProjectsStyles";
 
 import { Section, SectionTitle } from "../../styles/GlobalComponents";
@@ -20,8 +21,11 @@ import { projects } from "../../constants/constants";
 const Projects = () => (
   <>
     <SectionDivider />
-    <Section nopadding id='projects'>
+    <Section>
       <SectionTitle main>Projects</SectionTitle>
+    </Section>
+
+    <ProjectSection>
       <GridContainer>
         {projects.map(
           ({ id, image, title, description, tags, source, visit }) => (
@@ -38,9 +42,6 @@ const Projects = () => (
                   <SiJavascript size='3rem' />
                   <SiNodeDotJs size='3.3rem' />
                   <SiPostgresql size='3.3rem' />
-                  {/* {tags.map((tag, i) => (
-                  <Tag key={i}>{tag}</Tag>
-                ))} */}
                 </TagList>
               </div>
               <UtilityList>
@@ -51,7 +52,7 @@ const Projects = () => (
           )
         )}
       </GridContainer>
-    </Section>
+    </ProjectSection>
   </>
 );
 

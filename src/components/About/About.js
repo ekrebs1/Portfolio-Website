@@ -7,7 +7,7 @@ import {
   SectionDivider,
 } from "../../styles/GlobalComponents";
 
-const Timeline = () => {
+const About = () => {
   return (
     <>
       <SectionDivider />
@@ -28,4 +28,4 @@ const Timeline = () => {
   );
 };
 
-export default Timeline;
+export default About;

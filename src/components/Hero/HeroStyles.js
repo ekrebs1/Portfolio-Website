@@ -1,41 +1,5 @@
 import styled from "styled-components";
 
-export const LeftSection = styled.div`
-  width: 100%;
-  @media ${(props) => props.theme.breakpoints.sm} {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-
-    margin: 0 auto;
-  }
-  @media ${(props) => props.theme.breakpoints.md} {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
-    margin: 0 auto;
-  }
-`;
-
-export const RightSection = styled.div`
-  width: 100%;
-  @media ${(props) => props.theme.breakpoints.sm} {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-
-    margin: 0 auto;
-  }
-  @media ${(props) => props.theme.breakpoints.md} {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
-    margin: 0 auto;
-  }
-`;
-
 export const Div3 = styled.div`
   .wrapper {
     display: inline-flex;
@@ -97,9 +61,9 @@ export const Div3 = styled.div`
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
   }
 
-  .wrapper .facebook:hover,
-  .wrapper .facebook:hover .tooltip,
-  .wrapper .facebook:hover .tooltip::before {
+  .wrapper .linkedin:hover,
+  .wrapper .linkedin:hover .tooltip,
+  .wrapper .linkedin:hover .tooltip::before {
     background-color: #3b5999;
     color: #ffffff;
   }
@@ -131,13 +95,6 @@ export const SocialIcons = styled.a`
     transform: scale(1.2);
     cursor: pointer;
   }
-`;
-
-export const Img = styled.img`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  overflow: hidden;
 `;
 
 export const Button = styled.a`

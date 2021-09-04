@@ -22,7 +22,8 @@ export const GridContainer = styled.section`
   }
 `;
 export const BlogCard = styled.div`
-  border-radius: 10px;
+  border-radius: 15px;
+  padding-top: 20px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
   width: 400px;
@@ -44,16 +45,6 @@ export const HeaderThree = styled.h3`
   color: #76aace;
   padding: 0.5rem 0;
   font-size: ${(props) => (props.title ? "3rem" : "2rem")};
-`;
-
-export const Intro = styled.div`
-  width: 170px;
-  margin: 0 auto;
-  color: #dce3e7;
-  font-family: "Droid Serif", serif;
-  font-size: 13px;
-  font-style: italic;
-  line-height: 18px;
 `;
 
 export const CardInfo = styled.p`
@@ -81,6 +72,7 @@ export const ExternalLinks = styled.a`
   font-size: 1.6rem;
   padding: 1rem 1.5rem;
   border: solid 2px #76aace;
+  border-radius: 10px;
   transition: 0.5s;
   &:hover {
     color: #fff;
@@ -94,10 +86,6 @@ export const TagList = styled.ul`
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 2rem;
-`;
-export const Tag = styled.li`
-  color: #36454f;
-  font-size: 1.5rem;
 `;
 
 export const SectionDivider = styled.hr`
@@ -116,4 +104,29 @@ export const SectionDivider = styled.hr`
   margin-bottom: 50px;
   background-size: 3px 100%;
   width: 95%;
+`;
+
+export const ProjectSection = styled.section`
+  display: ${(props) => (props.grid ? "grid" : "flex")};
+  flex-direction: ${(props) => (props.row ? "row" : "column")};
+  padding: ${(props) => (props.nopadding ? "0" : "32px 48px 0")};
+  margin: 0 auto;
+  max-width: 1040px;
+  padding-bottom: 8rem;
+  box-sizing: content-box;
+  position: relative;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    padding: 24px 48px 0;
+    flex-direction: column;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: ${(props) => (props.nopadding ? "0" : "16px 16px 0")};
+
+    width: calc(100vw - 32px);
+    flex-direction: column;
+  }
 `;
